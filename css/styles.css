@@ -1,0 +1,196 @@
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет почты и номера телефона #757575 */
+/* цвет фона #E5E5E5 */
+/* акцент/ховер текста #2196F3 для навигации в шапке*/
+/* ховер/акцент #2196F3 для кнопок фильтров */
+/* цвет фона кнопок #F5F4FA */
+/* letter-spacing: 0.02em;  навагации сайта */
+/* letter-spacing: 0.03em; кнопки фильтра и вторичного цвета текста */
+/* letter-spacing: 0.06em; для заголовков проектов */
+
+:root {
+    --accent-text-color: #2196f3;
+    --primary-button-color: #f5f4fa;
+    --primary-link-text-color: #212121;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --effect-button-color: #2196f3;
+    --effect-mainlogo-color: #2196f3;
+    --secondary-footer-color: rgb(255, 255, 255, 0.6);
+}
+
+body {
+    background-color: #fff;
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+}
+/* Для логотипа */
+.logo {
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.mainlogo {
+    color: var(--effect-mainlogo-color);
+}
+.endlogo {
+    color: #ffffff;
+}
+/* Для шапки навигации */
+.link-nav a {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.link-nav a:hover,
+.link-nav a:focus {
+    color: var(--accent-text-color);
+}
+
+/* для почты и номера */
+.contact a {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+/* для элементов управления */
+.site-nav button {
+    cursor: pointer;
+    color: #212121;
+    background-color: var(--primary-button-color);
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 16px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.site-nav button:hover,
+.site-nav button:focus {
+    background-color: var(--effect-button-color);
+    color: #fff;
+}
+
+/* для списка проектов */
+.list-nav > h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    font-style: normal;
+    letter-spacing: 0.06em;
+}
+.list-nav li > p {
+    color: var(--secondary-text-color);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+/* для футера */
+.contact li > a:hover,
+.contact li > a:focus {
+    color: var(--accent-text-color);
+}
+/* Отдельно для index   */
+.herotext {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: #2f303a;
+}
+.herobut {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--effect-button-color);
+    color: #fff;
+}
+.nav-info li > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.secondheader {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.employee li > h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.employee li > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.list {
+    list-style: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.listfooter > a {
+    color: var(--secondary-footer-color);
+}
+.button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.bgc-footer {
+    background-color: #2f303a;
+}
+.bgc-footer > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.text-adres {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
