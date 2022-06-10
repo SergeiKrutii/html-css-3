@@ -8,33 +8,39 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="/" class="logo"> <span class="mainlogo">Web</span>Studio</a>
-
-                <ul class="link-nav">
-                    <li class="list"><a href="./index.html">Студия</a></li>
-                    <li class="list"><a href="./pfolio.html">Портфолио</a></li>
-                    <li class="list"><a href="">Контакты</a></li>
+        <header class="page-header">
+            <div class="container">
+                <nav class="container nav">
+                    <a href="/" class="logo"> <span class="mainlogo">Web</span>Studio</a>
+                    <ul class="link-nav">
+                        <li class="list"><a href="./index.html">Студия</a></li>
+                        <li class="list"><a href="./pfolio.html">Портфолио</a></li>
+                        <li class="list"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <ul class="contact">
+                    <li class="list"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="list"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-
-            <ul class="contact">
-                <li class="list"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="list"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+                
+            </div>
         </header>
         <main>
             <section>
                 <h1 class="herotext">Эфективные решения для вашего бизнеса</h1>
-                <button type="button" class="herobut">Заказать услугу</button>
+                <div class="container-hero">
+                    <button type="button" class="herobut">Заказать услугу</button>
+                </div>             
             </section>
             <section class="nav-info">
-                <h2 hidden>Преимущества</h2>
-                <ul>
+                <div class="container-advantage">
+                    <h2 hidden>Преимущества</h2>
+                    <ul class="advantage-list">
                     <li class="list">
                         <h3>ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -51,15 +57,23 @@
                         <h3>СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
-                </ul>
+                    </ul>
+                </div>
+                
             </section>
             <section>
-                <h2 class="secondheader">Чем мы занимаемся</h2>
-                <ul>
+                <div class="container-direction">
+                    <!-- <div> -->
+                        <h2 class="secondheader">Чем мы занимаемся</h2>
+                    <!-- </div> -->
+                    
+                <ul class="container-image">
                     <li class="list"><img src="./images/box1.jpg" alt="Печатаем на клавиатуре" width="370" /></li>
                     <li class="list"><img src="./images/box2.jpg" alt="Смотрим в смартфои и ноутбук" width="370" /></li>
                     <li class="list"><img src="./images/box3.jpg" alt="Смотрим палитру на планшете" width="370" /></li>
                 </ul>
+                </div>
+                
             </section>
             <section>
                 <h2 class="secondheader">Наша команда</h2>

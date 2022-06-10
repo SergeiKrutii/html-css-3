@@ -19,7 +19,16 @@
     --effect-mainlogo-color: #2196f3;
     --secondary-footer-color: rgb(255, 255, 255, 0.6);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: #fff;
     font-family: Roboto, sans-serif;
@@ -41,6 +50,18 @@ body {
 .endlogo {
     color: #ffffff;
 }
+
+.page-header {
+    background-color: #ccc;
+}
+/* Контейнер шапки */
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /* Для шапки навигации */
 .link-nav a {
     color: var(--primary-text-color);
@@ -55,6 +76,11 @@ body {
     color: var(--accent-text-color);
 }
 
+.link-nav {
+    margin: 0;
+    padding: 0;
+}
+
 /* для почты и номера */
 .contact a {
     color: var(--secondary-text-color);
@@ -64,7 +90,10 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
-
+.contact {
+    margin: 0;
+    padding: 0;
+}
 /* для элементов управления */
 .site-nav button {
     cursor: pointer;
@@ -106,8 +135,12 @@ body {
 .contact li > a:focus {
     color: var(--accent-text-color);
 }
-/* Отдельно для index   */
+/* Отдельно для HERO   */
+
 .herotext {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -119,6 +152,13 @@ body {
     background-color: #2f303a;
 }
 .herobut {
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -128,6 +168,13 @@ body {
     background-color: var(--effect-button-color);
     color: #fff;
 }
+.container-hero {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 94px;
+    padding: 0;
+    display: flex;
+}
 .nav-info li > p {
     font-weight: 400;
     font-size: 14px;
@@ -135,13 +182,49 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+.container-advantage {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+.advantage-list {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 94px;
+}
+.advantage-list > li {
+    margin-right: 30px;
+}
+.advantage-list > li:last-child {
+    margin-right: 0;
+}
 .secondheader {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+.container-direction > li {
+    /* display: flex; */
+    width: 1200px;
+}
+.container-image {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 188px;
+    padding: 0;
+    justify-content: center;
+}
+.container-image > li {
+    margin-right: 30px;
+}
+.container-image > li:last-child {
+    margin-right: 0;
 }
 .employee li > h3 {
     font-weight: 500;
