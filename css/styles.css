@@ -8,7 +8,9 @@
 /* letter-spacing: 0.02em;  навагации сайта */
 /* letter-spacing: 0.03em; кнопки фильтра и вторичного цвета текста */
 /* letter-spacing: 0.06em; для заголовков проектов */
-
+/* ////сделать общий контейнер и обращаться к нему  */
+/* ////сделать общий контейнер и обращаться к нему  .section */
+/* //// добавить рамки на портфолио и в шапке  */
 :root {
     --accent-text-color: #2196f3;
     --primary-button-color: #f5f4fa;
@@ -25,14 +27,24 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
     margin: 0;
     padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 body {
     background-color: #fff;
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
+}
+.main-container {
+    width: 1200px;
+    padding: 0 15px;
 }
 /* Для логотипа */
 .logo {
@@ -52,9 +64,9 @@ body {
     align-items: center;
 }
 .container-nav .logo {
-    margin-top: 24px;
+    /* padding-top: 24px; */
     margin-right: 93px;
-    margin-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
 .endlogo {
@@ -70,15 +82,18 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
+    justify-content: space-between;
 }
 /* Для шапки навигации */
 .link-nav a {
+    display: block;
     color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
     font-weight: 500;
     text-decoration: none;
+    padding: 24px 0 25px 0;
 }
 .link-nav {
     display: flex;
@@ -110,7 +125,6 @@ body {
     display: flex;
     list-style: none;
     margin: 0;
-    margin-left: auto;
     padding: 0 15px 0 0;
 }
 .contact .item:first-child {
@@ -208,11 +222,18 @@ body {
     color: var(--accent-text-color);
 }
 /* Отдельно для HERO   */
-
+.element-style {
+    width: 1230px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #2f303a;
+}
 .herotext {
-    display: block;
     margin-top: 0;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -221,14 +242,14 @@ body {
     text-transform: uppercase;
 
     color: #ffffff;
-    background-color: #2f303a;
 }
 .herobut {
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
     width: 200px;
     height: 50px;
+    padding: 0;
     border-radius: 4px;
     border: transparent;
     font-family: 'Roboto';
@@ -242,10 +263,9 @@ body {
 }
 .container-hero {
     width: 1230px;
-    margin: auto;
-    margin-bottom: 94px;
+
+    margin: 0;
     padding: 0;
-    display: flex;
 }
 .nav-info li > p {
     font-weight: 400;
@@ -254,12 +274,15 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+.nav-info {
+    padding-top: 94px;
+}
 .container-advantage {
     width: 1230px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px 0 15px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .advantage-list {
     display: flex;
@@ -281,15 +304,20 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
-.container-direction > li {
+/* .container-direction > li {
     width: 1230px;
+    padding-top: 94px;
+} */
+.container-direction {
+    width: 1230;
+    padding-bottom: 94px;
 }
 
 .container-image {
     display: flex;
     margin-top: 0;
-    margin-bottom: 188px;
-    padding: 0;
+    /* margin-bottom: 188px; */
+    /* padding: 0 0 0 94px; */
     justify-content: center;
 }
 .container-image > li {
@@ -319,8 +347,7 @@ body {
     width: 1230px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 15px;
-    margin-bottom: 94px;
+    padding: 94px 15px 94px 0;
 }
 .employee {
     display: flex;
