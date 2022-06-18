@@ -70,8 +70,8 @@ address {
 /* //////////////////////////////////////////Шапка сайта */
 
 /* //////////////////////ЛОГОТИП */
-.studio-pageheader {
-    border: 1px solid #ececec;
+.border-header {
+    border-bottom: 1px solid #ececec;
 }
 .header-box {
     display: flex;
@@ -324,6 +324,7 @@ address {
     margin-right: 0;
 }
 .buttonfilter {
+    padding: 6px 22px;
     border-radius: 4px;
     border-color: transparent;
     font-weight: 500;
@@ -360,6 +361,12 @@ address {
 .project-item:nth-child(3n + 1) {
     padding-left: 0;
 }
+.project-border {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+}
 .project-title {
     font-weight: 700;
     font-size: 18px;
@@ -368,6 +375,7 @@ address {
     color: var(--primary-text-color);
 }
 .project-text {
+    margin-top: 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
